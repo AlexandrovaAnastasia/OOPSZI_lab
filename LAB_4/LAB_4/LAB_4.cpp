@@ -80,7 +80,7 @@ Complex Complex::operator*(Complex &ex)
 Complex sin(const Complex &z)
 
 {
-	return Complex(sinh(z.Re()), sin(z.Im())) + Complex(cosh(z.Re()) + cos(z.Im()), 0);
+	return Complex(sin(z.Re())*cosh(z.Im()),cos(z.Re())*sinh(z.Im()));
 }
 ostream & operator << (ostream & out, const Complex &ex)
 
